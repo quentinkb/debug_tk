@@ -1,6 +1,0 @@
-framework module tkapi {
-  umbrella header "tkapi.h"
-
-  export *
-  module * { export * }
-}

@@ -14,6 +14,8 @@
     <guid>6b9045e3-2213-4592-9bbb-133b44d42ee3</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
+    <property name="android.javac.maxmemory" type="string">1024M</property>
+    <property name="android.dx.maxmemory" type="string">2048M</property>
     <ios>
         <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
         <use-app-thinning>true</use-app-thinning>
@@ -53,7 +55,6 @@
     <modules>
         <module platform="android">fr.thekeys.api</module>
         <module platform="commonjs">ti.cloud</module>
-        <module platform="iphone">fr.thekeys.api</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>

@@ -34,6 +34,7 @@ var _password = "pe3kon7c" ;
 /**
  * @var _fences
  * @desc liste de barrières du parking
+ * @deprecated
  */
 var _fences = null ;
 
@@ -50,7 +51,7 @@ var doAction = (function() {
     userManager = tkapi.createUserManager();
     keyManager = tkapi.createKeyManager();
     Ti.API.info("userManager and keyManager has been well created") ;
-    _fences = fences ;
+    //_fences = fences ;
     userManager.login(_username,_password, function(result) {
     	Ti.API.info("Login result is : " + result["status"]);
     });

@@ -1,5 +1,8 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<View layout="vertical" top="200">
+			<Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" id="label">Cette commande va procéder au scan BLE puis déclencher l'ouverture d'un ouvrant</Label>
+			<Button onClick="doAction">Lancement commande</Button>
+		</View>
 	</Window>
 </Alloy>

@@ -54,6 +54,7 @@
     </mobileweb>
     <modules>
         <module platform="android">fr.thekeys.api</module>
+        <module platform="iphone">fr.thekeys.api</module>
         <module platform="commonjs">ti.cloud</module>
     </modules>
     <deployment-targets>

@@ -25,12 +25,12 @@ var keyManager = null ;
  * @var _username
  * @desc nom d'utilisateur client the keys
  */
-var _username = "+33643337991" ;
+var _username = Alloy.CFG.TK_ID ;
 /**
  * @var _password
  * @desc mot de passe de l'utilisateur the keys
  */
-var _password = "pe3kon7c" ;
+var _password = Alloy.CFG.TK_PASSWORD ;
 /**
  * @var _fences
  * @desc liste de barrières du parking

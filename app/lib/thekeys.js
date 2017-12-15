@@ -44,7 +44,7 @@ var doAction = (function() {
    * @param fences map _fences
    * @desc lance une commande d'ouverture sur le module the keys à proximité
    */
-  var open = function(fences)
+  var open = function()
   {
     Ti.API.info("Open action has been called from thekeys lib") ;
     userManager = tkapi.createUserManager();
@@ -95,13 +95,7 @@ var doAction = (function() {
         for(var j = 0 ; j < keys.length ; j++) {
           var key = keys[j];
           if(key["identifier"] == result["identifier"]) {
-            for(var k = 0 ; k < _fences.length ; k++) {
-              var fence = _fences[k] ;
-              if((fence.fen_type == "door in" || fence.fen_type == "door out" || fence.fen_type == "door in/out") && fence.fen_code == key["title"].split("Porte ")[1] && fence.fen_valid == 1) {
-                Ti.API.warn("Granted key has been found, calling openLocker " + key["title"]) ;
-                openLocker(result);
-              }
-            }
+            openLocker(result);
           }
         }
     });

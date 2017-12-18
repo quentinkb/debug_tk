@@ -10,6 +10,8 @@
  * @todo : tests fonctionnels
  */
 var tkapi = require('fr.thekeys.api');
+var userManager = tkapi.createUserManager();
+var keyManager = tkapi.createKeyManager();
 
 /**
  * @var userManager
@@ -48,8 +50,8 @@ var doAction = (function() {
   var open = function()
   {
     Ti.API.info("Open action has been called from thekeys lib") ;
-    userManager = tkapi.createUserManager();
-    keyManager = tkapi.createKeyManager();
+    userManager = tkapi.getUserManager();
+    keyManager = tkapi.getKeyManager();
     Ti.API.info("userManager and keyManager has been well created") ;
     //_fences = fences ;
     userManager.login(_username,_password, function(result) {
